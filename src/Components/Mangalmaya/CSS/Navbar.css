@@ -1,0 +1,677 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+#mangalmaya-body {
+    /* border: 1px solid red; */
+    height: 100vh;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 253, 253, 0.2));
+    overflow-x: hidden;
+    overflow-y: none;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#navbar {
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid orange; */
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 53px;
+    width: 100%;
+}
+
+#firstnav {
+
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 40px;
+    letter-spacing: 6px;
+    /* color: black; */
+    /* border: 1px solid red; */
+    width: 25%;
+
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+
+
+#secondnav {
+    /* border: 2px solid green; */
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    width: 40%;
+    font-size: 22px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    letter-spacing: 2px;
+
+
+
+}
+
+#signbtn {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    background: rgba(255, 122, 0, 1);
+    width: 180px;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 33px;
+    cursor: pointer;
+    color: white;
+    font-size: 27px;
+    letter-spacing: 2px;
+
+}
+
+#firstnav a {
+    text-decoration: none;
+    color: blue;
+}
+
+#firstnav a:focus,
+#firstnav a:active {
+    color: blue;
+}
+
+#secondnav a {
+    text-decoration: none;
+    color: black;
+}
+
+#secondnav a:focus,
+#secondnav a:active {
+    color: black;
+}
+
+@media screen and (min-width:2000px) {
+    #firstnav {
+        display: flex;
+
+        flex-wrap: wrap;
+        font-family: "Lato", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 60px;
+        letter-spacing: 6px;
+        color: black;
+        /* border: 1px solid red; */
+        width: 25%;
+
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    #secondnav {
+        /* border: 2px solid green; */
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        width: 40%;
+        font-size: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        letter-spacing: 2px;
+
+
+    }
+
+    #signbtn {
+        cursor: pointer;
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        background: rgba(255, 122, 0, 1);
+        width: 210px;
+        height: 70px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border-radius: 33px;
+
+        color: white;
+        font-size: 40px;
+        letter-spacing: 2px;
+
+    }
+
+}
+
+@media screen and (max-width:1440px) {
+    #firstnav {
+        display: flex;
+
+        flex-wrap: wrap;
+        font-family: "Lato", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 30px;
+        letter-spacing: 6px;
+        color: black;
+        /* border: 1px solid red; */
+        width: 25%;
+
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    #secondnav {
+        /* border: 2px solid green; */
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        width: 40%;
+        font-size: 22px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        letter-spacing: 2px;
+
+
+    }
+
+    #signbtn {
+        cursor: pointer;
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        background: rgba(255, 122, 0, 1);
+        width: 165px;
+        height: 45px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border-radius: 33px;
+
+        color: white;
+        font-size: 25px;
+        letter-spacing: 2px;
+
+    }
+
+}
+
+@media screen and (max-width:1024px) {
+    #firstnav {
+        display: flex;
+
+        flex-wrap: wrap;
+        font-family: "Lato", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 22px;
+        letter-spacing: 6px;
+        color: black;
+        /* border: 1px solid red; */
+        width: 25%;
+
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    #secondnav {
+        /* border: 2px solid green; */
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        width: 40%;
+        font-size: 18px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        letter-spacing: 2px;
+
+
+    }
+
+    #signbtn {
+        cursor: pointer;
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        background: rgba(255, 122, 0, 1);
+        width: 140px;
+        height: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border-radius: 33px;
+
+        color: white;
+        font-size: 22px;
+        letter-spacing: 2px;
+
+    }
+}
+
+
+
+@media screen and (max-width:860px) {
+    #firstnav {
+        display: flex;
+
+        flex-wrap: wrap;
+        font-family: "Lato", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 20px;
+        letter-spacing: 6px;
+        color: black;
+        /* border: 1px solid red; */
+        width: 22%;
+
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    #secondnav {
+        /* border: 2px solid green; */
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        width: 44%;
+        font-size: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        letter-spacing: 2px;
+
+
+    }
+
+    #signbtn {
+        cursor: pointer;
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        background: rgba(255, 122, 0, 1);
+        width: 135px;
+        height: 38px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border-radius: 33px;
+
+        color: white;
+        font-size: 20px;
+        letter-spacing: 2px;
+
+    }
+}
+
+@media screen and (max-width:768px) {
+    #firstnav {
+        display: flex;
+
+        flex-wrap: wrap;
+        font-family: "Lato", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 18px;
+        letter-spacing: 6px;
+        color: black;
+        /* border: 1px solid red; */
+        width: 22%;
+
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    #secondnav {
+        /* border: 2px solid green; */
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        width: 45%;
+        font-size: 13px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        letter-spacing: 2px;
+
+
+    }
+
+    #signbtn {
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        background: rgba(255, 122, 0, 1);
+        width: 120px;
+        height: 35px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border-radius: 33px;
+        cursor: pointer;
+        color: white;
+        font-size: 18px;
+        letter-spacing: 2px;
+
+    }
+}
+
+@media screen and (max-width:700px) {
+    #navbar {
+        display: flex;
+        flex-wrap: wrap;
+
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+
+    #firstnav {
+        display: flex;
+
+        flex-wrap: wrap;
+        font-family: "Lato", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 12px;
+        letter-spacing: 6px;
+        /* color: black; */
+        /* border: 1px solid red; */
+        width: 20%;
+
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    #secondnav {
+        /* border: 2px solid green; */
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        width: 47%;
+        font-size: 9px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        letter-spacing: 2px;
+
+
+    }
+
+    #signbtn {
+        cursor: pointer;
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        background: rgba(255, 122, 0, 1);
+        width: 76px;
+        height: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border-radius: 33px;
+
+        color: white;
+        font-size: 10px;
+        letter-spacing: 2px;
+
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    #navbar {
+        display: flex;
+        flex-wrap: wrap;
+
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1px;
+    }
+
+    #firstnav {
+        display: flex;
+
+        flex-wrap: wrap;
+        font-family: "Lato", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 12px;
+        letter-spacing: 3px;
+        /* color: black; */
+
+        width: 28%;
+
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    #secondnav {
+
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        width: 50%;
+        font-size: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        letter-spacing: 1px;
+
+
+    }
+
+    #signbtn {
+        cursor: pointer;
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        background: rgba(255, 122, 0, 1);
+        width: 65px;
+        height: 18px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border-radius: 33px;
+
+        color: white;
+        font-size: 8px;
+        letter-spacing: 2px;
+
+    }
+}
+
+@media screen and (max-width:376px) {
+    #navbar {
+        display: flex;
+        flex-wrap: wrap;
+
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1px;
+    }
+
+    #firstnav {
+        display: flex;
+
+        flex-wrap: wrap;
+        font-family: "Lato", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 10 px;
+        letter-spacing: 1px;
+        /* color: black; */
+
+        width: 28%;
+
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    #secondnav {
+
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        width: 51%;
+        font-size: 9px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        letter-spacing: 1px;
+
+
+    }
+
+    #signbtn {
+        cursor: pointer;
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        background: rgba(255, 122, 0, 1);
+        width: 58px;
+        height: 17px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+
+        color: white;
+        font-size: 8px;
+        letter-spacing: 1px;
+        margin-right: 2px;
+
+    }
+
+}
+
+@media screen and (max-width:321px) {
+    #navbar {
+        display: flex;
+        flex-wrap: wrap;
+
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1px;
+    }
+
+    #firstnav {
+        display: flex;
+
+        flex-wrap: wrap;
+        font-family: "Lato", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 10 px;
+        letter-spacing: 1px;
+        /* color: black; */
+
+        width: 23%;
+
+        align-items: center;
+        justify-content: center;
+        margin-left: 5px;
+
+
+    }
+
+    #secondnav {
+
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        width: 52%;
+        font-size: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        letter-spacing: 1px;
+        margin-top: 1px;
+
+
+    }
+
+    #signbtn {
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        background: rgba(255, 122, 0, 1);
+        width: 56px;
+        height: 17px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        cursor: pointer;
+        color: white;
+        font-size: 8px;
+        letter-spacing: 1px;
+        margin-right: 2px;
+
+    }
+
+}
