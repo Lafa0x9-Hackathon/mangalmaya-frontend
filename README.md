@@ -9,8 +9,8 @@ https://mangalmaya.com.np
 https://github.com/Expensify/App
 
 # UI/UX Inspiration
-https://www.behance.net/gallery/191324251/TRAVEL-AGENCY-WEBSITE?tracking_source=search_projects|travel+web+app&l=1
-https://www.behance.net/gallery/148135313/Travel-App-Design-UI-Design?tracking_source=search_projects%7Ctravel+app
+Website : https://www.behance.net/gallery/191324251/TRAVEL-AGENCY-WEBSITE?tracking_source=search_projects|travel+web+app&l=1<br>
+Dashboard : https://themeforest.net/item/travl-react-redux-hotel-admin-dashboard/38178964#
 
 # Demo Account credential
 Email: 
