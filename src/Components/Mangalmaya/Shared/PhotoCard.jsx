@@ -1,7 +1,13 @@
-import React from "react";
-import "../Mangalmaya/CSS/PhotoCard.css";
+import React, { useContext } from "react";
+import "../CSS/PhotoCard.css";
+
+import modalContext from "../Context/modalContext";
 
 const PhotoCard = (props) => {
+  const { flag, toggleFlag } = useContext(modalContext);
+  const Btn_check = () => {
+    toggleFlag();
+  };
   return (
     <div id="card">
       <div>
@@ -16,7 +22,9 @@ const PhotoCard = (props) => {
             <h5>{props.Time}</h5>
             <p>{props.Price}/- per person</p>
           </div>
-          <div id="btn">Book</div>
+          <div id="btn" onClick={Btn_check}>
+            Book
+          </div>
         </div>
       </div>
     </div>

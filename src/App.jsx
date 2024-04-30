@@ -5,18 +5,21 @@ import Home from "./Components/Mangalmaya/Home.jsx";
 import Destination from "./Components/Mangalmaya/Destination.jsx";
 import AboutUs from "./Components/Mangalmaya/AboutUs.jsx";
 import ContactUs from "./Components/Mangalmaya/ContactUs.jsx";
+import ModalState from "./Components/Mangalmaya/Context/modalState.jsx";
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Navbar />}>
-          <Route path="/" element={<Home />} />
-          <Route path="destination" element={<Destination />} />
-          <Route path="aboutus" element={<AboutUs />} />
-          <Route path="contactus" element={<ContactUs />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <ModalState>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Navbar />}>
+            <Route path="/" element={<Home />} />
+            <Route path="destination" element={<Destination />} />
+            <Route path="aboutus" element={<AboutUs />} />
+            <Route path="contactus" element={<ContactUs />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </ModalState>
   );
 }
 

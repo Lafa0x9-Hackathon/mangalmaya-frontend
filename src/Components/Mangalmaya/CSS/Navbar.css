@@ -6,6 +6,11 @@
     margin: 0px;
 }
 
+#main-menu {
+    /* border: 1px solid green; */
+    display: flex;
+    width: 100%;
+}
 
 #mangalmaya-body {
     /* border: 1px solid red; */
@@ -21,14 +26,42 @@
     align-items: center;
 }
 
+#res-menu {
+
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+
+    right: 0.5rem;
+    /* position: absolute; */
+    width: 2.2rem;
+    height: 1.8rem;
+    cursor: pointer;
+    /* border: 1px solid green; */
+}
+
+#res-menu span {
+    height: 0.4rem;
+    width: 100%;
+    background: rgba(255, 122, 0, 1);
+    border-radius: 0.2rem;
+
+}
+
+
 #navbar {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 2vh;
     /* border: 1px solid orange; */
     align-items: center;
     justify-content: space-around;
-    margin-top: 53px;
+    z-index: 1;
     width: 100%;
+    height: 10vh;
+    /* position: fixed; */
+
+
 }
 
 #firstnav {
@@ -42,7 +75,7 @@
     letter-spacing: 6px;
     /* color: black; */
     /* border: 1px solid red; */
-    width: 25%;
+    width: 35%;
 
     align-items: center;
     justify-content: center;
@@ -58,11 +91,12 @@
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    width: 40%;
+    width: 50%;
     font-size: 22px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
     letter-spacing: 2px;
 
 
@@ -110,6 +144,7 @@
 }
 
 @media screen and (min-width:2000px) {
+
     #firstnav {
         display: flex;
 
@@ -121,7 +156,7 @@
         letter-spacing: 6px;
         color: black;
         /* border: 1px solid red; */
-        width: 25%;
+        width: 35%;
 
         align-items: center;
         justify-content: center;
@@ -135,7 +170,7 @@
         font-optical-sizing: auto;
         font-weight: 700;
         font-style: normal;
-        width: 40%;
+        width: 50%;
         font-size: 40px;
         display: flex;
         flex-wrap: wrap;
@@ -180,7 +215,7 @@
         letter-spacing: 6px;
         color: black;
         /* border: 1px solid red; */
-        width: 25%;
+        width: 35%;
 
         align-items: center;
         justify-content: center;
@@ -194,7 +229,7 @@
         font-optical-sizing: auto;
         font-weight: 700;
         font-style: normal;
-        width: 40%;
+        width: 50%;
         font-size: 22px;
         display: flex;
         flex-wrap: wrap;
@@ -239,7 +274,7 @@
         letter-spacing: 6px;
         color: black;
         /* border: 1px solid red; */
-        width: 25%;
+        width: 35%;
 
         align-items: center;
         justify-content: center;
@@ -253,11 +288,12 @@
         font-optical-sizing: auto;
         font-weight: 700;
         font-style: normal;
-        width: 40%;
+        width: 50%;
         font-size: 18px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+        align-items: center;
         letter-spacing: 2px;
 
 
@@ -346,56 +382,43 @@
 }
 
 @media screen and (max-width:768px) {
+    #navbar {
+
+        /* border: 1px solid orange; */
+        height: 8vh;
+        margin-top: 0px;
+
+    }
+
     #firstnav {
-        display: flex;
 
-        flex-wrap: wrap;
-        font-family: "Lato", sans-serif;
-        font-weight: 900;
-        font-style: normal;
-        font-size: 18px;
-        letter-spacing: 6px;
-        color: black;
+        font-size: 25px;
+        letter-spacing: 5px;
+
         /* border: 1px solid red; */
-        width: 22%;
 
-        align-items: center;
-        justify-content: center;
+        width: 30%;
 
 
     }
 
     #secondnav {
         /* border: 2px solid green; */
-        font-family: "Raleway", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 700;
-        font-style: normal;
-        width: 45%;
-        font-size: 13px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        letter-spacing: 2px;
+
+        width: 52%;
+        font-size: 17px;
+
+        letter-spacing: 1px;
 
 
     }
 
     #signbtn {
-        font-family: "Raleway", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 700;
-        font-style: normal;
+
         background: rgba(255, 122, 0, 1);
         width: 120px;
         height: 35px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        border-radius: 33px;
-        cursor: pointer;
-        color: white;
+
         font-size: 18px;
         letter-spacing: 2px;
 
@@ -470,10 +493,40 @@
 }
 
 @media screen and (max-width:500px) {
+    #res-menu {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        top: 0.8rem;
+        right: 0.5rem;
+        position: absolute;
+        width: 2.2rem;
+        height: 1.8rem;
+        cursor: pointer;
+        /* border: 1px solid green; */
+    }
+
+    #res-menu span {
+        height: 0.4rem;
+        width: 100%;
+        background: rgba(255, 122, 0, 1);
+        border-radius: 0.2rem;
+
+    }
+
+    #main-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(196, 255, 255, 0.959);
+    }
 
     #navbar {
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
 
         align-items: center;
         justify-content: space-between;
@@ -481,58 +534,61 @@
     }
 
     #firstnav {
-        display: flex;
 
-        flex-wrap: wrap;
-        font-family: "Lato", sans-serif;
-        font-weight: 900;
-        font-style: normal;
-        font-size: 12px;
+        font-size: 30px;
         letter-spacing: 3px;
-        /* color: black; */
+        height: 8vh;
 
-        width: 28%;
+        width: 70%;
 
-        align-items: center;
-        justify-content: center;
 
 
     }
 
     #secondnav {
+        display: none;
+    }
 
+    #thirdnav {
+        display: none;
+    }
+
+    #secondnav1 {
+        /* border: 2px solid green; */
         font-family: "Raleway", sans-serif;
         font-optical-sizing: auto;
         font-weight: 700;
         font-style: normal;
-        width: 50%;
-        font-size: 10px;
+        height: 25vh;
+        font-size: 20px;
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: space-around;
-        letter-spacing: 1px;
-
+        align-items: center;
+        /* display: none; */
 
     }
 
-    #signbtn {
-        cursor: pointer;
-        font-family: "Raleway", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 700;
-        font-style: normal;
-        background: rgba(255, 122, 0, 1);
-        width: 65px;
-        height: 18px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        border-radius: 33px;
+    #secondnav1 a {
+        text-decoration: none;
+        color: black;
+    }
 
-        color: white;
-        font-size: 8px;
-        letter-spacing: 2px;
+    #secondnav a:hover {
+        text-decoration: underline;
+    }
+
+    #signbtn {
+        /* display: none; */
+        width: 100%;
+        height: 25px;
+
+        border-radius: 0px;
+        background-color: rgba(193, 247, 247, 0);
+        color: rgba(255, 122, 0, 1);
+        padding: 5px 0px 5px 0px;
+        font-size: 23px;
+        letter-spacing: 3px;
 
     }
 }
@@ -554,7 +610,7 @@
         font-family: "Lato", sans-serif;
         font-weight: 900;
         font-style: normal;
-        font-size: 10 px;
+        font-size: 11 px;
         letter-spacing: 1px;
         /* color: black; */
 
@@ -566,14 +622,14 @@
 
     }
 
-    #secondnav {
+    #secondnav1 {
 
         font-family: "Raleway", sans-serif;
         font-optical-sizing: auto;
         font-weight: 700;
         font-style: normal;
-        width: 51%;
-        font-size: 9px;
+        width: 100%;
+        font-size: 18px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -582,25 +638,24 @@
 
     }
 
-    #signbtn {
-        cursor: pointer;
-        font-family: "Raleway", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 700;
-        font-style: normal;
-        background: rgba(255, 122, 0, 1);
-        width: 58px;
-        height: 17px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        border-radius: 30px;
+    #secondnav {
+        display: none;
+    }
 
-        color: white;
-        font-size: 8px;
-        letter-spacing: 1px;
-        margin-right: 2px;
+    #thirdnav {
+        display: none;
+    }
+
+    #signbtn {
+        width: 100%;
+        height: 22px;
+
+        border-radius: 0px;
+        background-color: rgba(193, 247, 247, 0);
+        color: rgba(255, 122, 0, 1);
+        padding: 5px 0px 5px 0px;
+        font-size: 22px;
+        letter-spacing: 3px;
 
     }
 
@@ -636,14 +691,11 @@
 
     }
 
-    #secondnav {
+    #secondnav1 {
 
-        font-family: "Raleway", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 700;
-        font-style: normal;
-        width: 52%;
-        font-size: 8px;
+
+        width: 100%;
+        font-size: 18px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -654,24 +706,23 @@
     }
 
     #signbtn {
-        font-family: "Raleway", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 700;
-        font-style: normal;
-        background: rgba(255, 122, 0, 1);
-        width: 56px;
-        height: 17px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        border-radius: 30px;
-        cursor: pointer;
-        color: white;
-        font-size: 8px;
-        letter-spacing: 1px;
-        margin-right: 2px;
+        width: 100%;
+        height: 20px;
 
+        border-radius: 0px;
+        background-color: rgba(193, 247, 247, 0);
+        color: rgba(255, 122, 0, 1);
+        padding: 5px 0px 5px 0px;
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+
+    #secondnav {
+        display: none;
+    }
+
+    #thirdnav {
+        display: none;
     }
 
 }

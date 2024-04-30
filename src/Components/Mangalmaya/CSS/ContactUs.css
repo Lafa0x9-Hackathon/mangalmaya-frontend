@@ -1,0 +1,821 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#contactus {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#contact-header {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 35vh;
+
+}
+
+#header2 {
+    width: 55%;
+
+    text-align: center;
+
+}
+
+#header1 h3 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    font-size: 48px;
+
+}
+
+#header2 p {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    font-size: 32px;
+
+}
+
+#contact-form {
+    background: linear-gradient(180deg, rgba(0, 87, 255, 0.53) 0%, rgba(4, 64, 182, 0.53) 75.35%);
+    font-size: 40px;
+    height: 704px;
+    width: 1030px;
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    margin: 5vh 0vh 10vh 0vh;
+
+
+
+
+
+}
+
+#btn-parent {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 10vh;
+    ;
+}
+
+#button-submt {
+    color: rgba(140, 172, 223, 1);
+    background-color: white;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    padding: 5px;
+    cursor: pointer;
+
+}
+
+#contact-form input {
+
+    font-size: 29px;
+    margin: 10px;
+    width: 90%;
+    padding: 5px;
+
+}
+
+#contact-form textarea {
+    height: 164px;
+    font-size: 29px;
+    margin: 10px;
+    padding: 5px;
+    width: 80%;
+
+
+}
+
+.ip-field {
+    display: flex;
+    width: 94%;
+    justify-content: space-between;
+    /* border: 1px solid green; */
+}
+
+/* .ip-field input {
+    width: 90%;
+
+} */
+
+.common-class {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    align-items: start;
+    justify-content: space-evenly;
+    margin-top: 2vh;
+    margin-left: 25px;
+}
+
+.check-text {
+    color: red;
+    font-size: 15px;
+    margin-left: 17px;
+
+}
+
+#contact-form input::placeholder {
+    font-size: 29px;
+    /* padding-left: 0px; */
+    color: rgb(177, 175, 175);
+}
+
+#contact-form textarea::placeholder {
+    font-size: 29px;
+    /* padding: 0px; */
+    color: rgb(177, 175, 175);
+}
+
+#connect {
+    background: rgba(255, 255, 255, 1);
+    width: 1030px;
+    height: 288px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10vh;
+
+}
+
+#connect-icon {
+    color: rgba(0, 87, 255, 1);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    font-size: 22px;
+    /* border: 1px solid green; */
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#icon-box .media {
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+}
+
+#icon-box {
+    background: rgba(0, 87, 255, 1);
+    width: 375px;
+    height: 175px;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: 20vh 10vh;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#details {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    font-size: 32px;
+    /* border: 1px solid orange; */
+    width: 37%;
+    line-height: 7vh;
+}
+
+@media screen and (min-width:2000px) {
+    #header2 {
+        width: 90%;
+    }
+
+    #header1 h3 {
+        font-size: 90px;
+
+    }
+
+    #header2 p {
+        font-size: 45px;
+
+    }
+
+    .check-text {
+        font-size: 40px;
+    }
+
+    #contact-form {
+
+        font-size: 60px;
+        height: 110vh;
+        width: 150vh;
+        border-radius: 45px;
+    }
+
+    #contact-form input {
+        height: 72px;
+        font-size: 35px;
+        margin: 20px;
+
+    }
+
+    #contact-form input::placeholder {
+        font-size: 35px;
+
+    }
+
+    #contact-form textarea::placeholder {
+        font-size: 35px;
+
+    }
+
+    #contact-form textarea {
+        height: 35vh;
+        font-size: 40px;
+
+
+    }
+
+
+    #btn-parent {
+
+
+        margin-top: 5vh;
+
+    }
+
+    #button-submt {
+
+        width: 20%;
+
+        border-radius: 30px;
+        padding: 9px;
+
+
+    }
+
+    #connect {
+
+        width: 120vh;
+        height: 35vh;
+
+
+    }
+
+    #connect-icon {
+
+        font-size: 40px;
+
+    }
+
+    #icon-box .media {
+        width: 6rem;
+        height: 6rem;
+
+    }
+
+    #icon-box {
+
+        width: 40vh;
+        height: 20vh;
+
+        grid-template-columns: 20vh 10vh;
+
+
+    }
+
+    #details {
+
+        font-size: 50px;
+        /* border: 1px solid orange; */
+        width: 45%;
+        line-height: 8vh;
+    }
+
+}
+
+
+@media screen and (max-width:1025px) {
+    #header2 {
+        width: 75%;
+    }
+
+    #header1 h3 {
+        font-size: 50px;
+
+    }
+
+    #header2 p {
+        font-size: 25px;
+
+    }
+
+    #contact-form {
+
+        font-size: 20px;
+        height: 90vh;
+        width: 120vh;
+        border-radius: 45px;
+    }
+
+    #contact-form input {
+        height: 40px;
+        font-size: 25px;
+        margin: 15px;
+
+    }
+
+    #contact-form input::placeholder {
+        font-size: 25px;
+
+    }
+
+    #contact-form textarea::placeholder {
+        font-size: 25px;
+        padding: 0px;
+
+    }
+
+    #contact-form textarea {
+        height: 10vh;
+        font-size: 10px;
+
+
+    }
+
+
+    #btn-parent {
+
+
+        padding: 1px;
+        margin-top: 5px;
+
+    }
+
+    #button-submt {
+
+        width: 20%;
+
+
+        padding: 10px;
+
+
+    }
+
+    #connect {
+
+        width: 110vh;
+        height: 30vh;
+
+
+    }
+
+    #connect-icon {
+
+        font-size: 30px;
+
+    }
+
+    #icon-box .media {
+        width: 3.5rem;
+        height: 3.5rem;
+
+    }
+
+    #icon-box {
+
+        width: 40vh;
+        height: 20vh;
+
+        grid-template-columns: 20vh 10vh;
+
+
+    }
+
+    #details {
+
+        font-size: 28px;
+        /* border: 1px solid orange; */
+        width: 55%;
+        line-height: 7vh;
+        margin-top: 2vh;
+    }
+
+}
+
+@media screen and (max-width:769px) {
+    #header2 {
+        width: 80%;
+    }
+
+    #header1 h3 {
+        font-size: 47px;
+
+    }
+
+    #header2 p {
+        font-size: 23px;
+
+    }
+
+    #contact-form {
+
+        font-size: 20px;
+        height: 85vh;
+        width: 110vh;
+        border-radius: 45px;
+    }
+
+    #contact-form input {
+        height: 35px;
+        font-size: 20px;
+        margin: 8px;
+
+    }
+
+    .ip-field {
+        width: 95%;
+    }
+
+    #contact-form input::placeholder {
+        font-size: 20px;
+
+    }
+
+    #contact-form textarea::placeholder {
+        font-size: 20px;
+        padding: 10px;
+
+    }
+
+    #contact-form textarea {
+        height: 17vh;
+        font-size: 20px;
+
+
+    }
+
+
+    #btn-parent {
+
+
+        padding: 1px;
+        margin-top: 5px;
+
+    }
+
+    #button-submt {
+
+        width: 20%;
+
+
+        padding: 10px;
+
+
+    }
+
+    #connect {
+
+        width: 110vh;
+        height: 30vh;
+
+
+    }
+
+    #connect-icon {
+
+        font-size: 20px;
+
+    }
+
+    #icon-box .media {
+        width: 2.8rem;
+        height: 2.8rem;
+
+    }
+
+    #icon-box {
+
+        width: 35vh;
+        height: 20vh;
+
+        grid-template-columns: 15vh 10vh;
+
+
+    }
+
+    #details {
+
+        font-size: 24px;
+        /* border: 1px solid orange; */
+        width: 42%;
+        line-height: 7vh;
+        margin-top: 2vh;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width:426px) {
+    #contact-header {
+        height: 20vh;
+
+    }
+
+    #header2 {
+        width: 90%;
+    }
+
+    #header1 h3 {
+        font-size: 20px;
+
+    }
+
+    #header2 p {
+        font-size: 15px;
+
+    }
+
+    #contact-form {
+
+        font-size: 18px;
+        height: 95vh;
+        width: 55vh;
+        border-radius: 15px;
+        margin-top: 5vh;
+    }
+
+    .common-class {
+        margin-left: 5px;
+    }
+
+    .common-class input {
+        height: 10px;
+        font-size: 10px;
+        margin: 3px;
+        width: 100%;
+        padding: 2px;
+    }
+
+    .ip-field {
+        width: 100%;
+        flex-direction: column;
+        font-size: 15px;
+    }
+
+    .ip-field input {
+        width: 95%;
+
+        font-size: 15px;
+    }
+
+    .ip-field input::placeholder {
+        font-size: 15px;
+        padding: 4px;
+    }
+
+
+    #contact-form input::placeholder {
+        font-size: 15px;
+        padding: 4px;
+
+    }
+
+    #contact-form textarea::placeholder {
+        font-size: 15px;
+        padding: 4px;
+
+    }
+
+    .common-class textarea {
+        height: 5vh;
+        font-size: 15px;
+        margin: 4px;
+        width: 100%;
+        padding: 0px;
+
+    }
+
+
+    #btn-parent {
+
+
+
+        margin-top: 8px;
+
+    }
+
+    #button-submt {
+
+        width: 40%;
+
+
+        padding: 5px;
+
+
+    }
+
+    #connect {
+
+        width: 65vh;
+        height: 30vh;
+
+
+    }
+
+    #connect-icon {
+
+        font-size: 16px;
+
+    }
+
+    #icon-box .media {
+        width: 2rem;
+        height: 2rem;
+
+    }
+
+    #icon-box {
+
+        width: 20vh;
+        height: 16vh;
+
+        grid-template-columns: 10vh 5vh;
+
+
+    }
+
+    #details {
+
+        font-size: 16px;
+        /* border: 1px solid orange; */
+        width: 55%;
+        line-height: 4vh;
+        margin-top: 4vh;
+    }
+
+}
+
+
+@media screen and (max-width:321px) {
+    #contact-header {
+        height: 20vh;
+
+    }
+
+    #header2 {
+        width: 85%;
+    }
+
+    #header1 h3 {
+        font-size: 20px;
+
+    }
+
+    #header2 p {
+        font-size: 15px;
+
+    }
+
+    #contact-form {
+
+        font-size: 15px;
+        height: 90vh;
+        width: 50vh;
+        border-radius: 15px;
+        margin-top: 5vh;
+    }
+
+    #contact-form input {
+        height: 35px;
+        font-size: 15px;
+        margin: 10px 0px 0px 5px;
+        width: 90%;
+
+    }
+
+    .ip-field {
+        width: 100%;
+        flex-direction: column;
+        font-size: 15px;
+    }
+
+    .ip-field input {
+        width: 95%;
+
+        font-size: 15px;
+    }
+
+    .ip-field input::placeholder {
+        font-size: 15px;
+        padding: 4px;
+    }
+
+
+    #contact-form input::placeholder {
+        font-size: 15px;
+        padding: 4px;
+
+    }
+
+    #contact-form textarea::placeholder {
+        font-size: 15px;
+        padding: 4px;
+
+    }
+
+    #contact-form textarea {
+        height: 17vh;
+        font-size: 15px;
+        margin: 10px 0px 0px 5px;
+        width: 90%;
+
+    }
+
+
+    #btn-parent {
+
+
+
+        margin-top: 8px;
+
+    }
+
+    #button-submt {
+
+        width: 40%;
+
+
+        padding: 5px;
+
+
+    }
+
+    #connect {
+
+        width: 56vh;
+        height: 30vh;
+
+
+    }
+
+    #connect-icon {
+
+        font-size: 16px;
+
+    }
+
+    #icon-box .media {
+        width: 2rem;
+        height: 2rem;
+
+    }
+
+    #icon-box {
+
+        width: 18vh;
+        height: 16vh;
+
+        grid-template-columns: 10vh 5vh;
+
+
+    }
+
+    #details {
+
+        font-size: 16px;
+        /* border: 1px solid orange; */
+        width: 60%;
+        line-height: 4vh;
+        margin-top: 4vh;
+    }
+
+}

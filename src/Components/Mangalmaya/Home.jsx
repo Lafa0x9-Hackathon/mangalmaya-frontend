@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import Lumbini from "../../Images/Lumbini.jpg";
 
 import Mountain from "../../Images/Mountain.jpg";
@@ -8,11 +8,16 @@ import Bhaktapur from "../../Images/Bhaktapur.jpeg";
 import Pashupatinath from "../../Images/Pashupatinath.jpeg";
 import Patan from "../../Images/Patan.jpeg";
 import Pokhara from "../../Images/Pokhara.jpeg";
-import PhotoCard from "../Shared/PhotoCard";
+import PhotoCard from "../Mangalmaya/Shared/PhotoCard.jsx";
+import PopUp from "./Shared/PopUp.jsx";
 import "./CSS/Home.css";
+import modalContext from "./Context/modalContext.jsx";
 const Home = () => {
+  const { flag, toggleFlag } = useContext(modalContext);
+
   return (
     <>
+      <div id="show">{flag && <PopUp />}</div>
       <div id="landing-body">
         <div id="text">
           <div className="main-text">
@@ -37,9 +42,9 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div id="mid-text">Popular destinations</div>
-      <div id="photos">
-        <div className="group1">
+      <div id="mid-text">Popular Destinations</div>
+      <div id="photos" onClick={() => (flag ? toggleFlag() : null)}>
+        <div className="group">
           <PhotoCard
             image={Pashupatinath}
             Title="Pashupatinath Temple"
@@ -52,15 +57,22 @@ const Home = () => {
             Time="1D"
             Price="5000"
           />
-        </div>
-        <div className="group2">
+
           <PhotoCard image={Pokhara} Title="Pokhara" Time="5D" Price="10000" />
           <PhotoCard
-            image={Patan}
-            Title="Patan Durbar Square"
+            image={Pashupatinath}
+            Title="Pashupatinath Temple"
             Time="1D"
             Price="5000"
           />
+          <PhotoCard
+            image={Bhaktapur}
+            Title="Bhaktapur Durbar Square"
+            Time="1D"
+            Price="5000"
+          />
+
+          <PhotoCard image={Pokhara} Title="Pokhara" Time="5D" Price="10000" />
         </div>
       </div>
       <div id="view-more">View more</div>
