@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Link, NavLink, Outlet } from "react-router-dom";
 import "./CSS/Navbar.css";
 import modalContext from "./Context/modalContext";
+import Footer from "./Footer.jsx";
 
 const Navbar = () => {
   const { openMenu, toggleMenu } = useContext(modalContext);
@@ -47,6 +48,7 @@ const Navbar = () => {
           </div>
         </div>
         <Outlet />
+        <Footer />
       </div>
     </>
   );
